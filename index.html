@@ -139,7 +139,7 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am an applied mathematician who leverages a broad spectrum of techniques—from generative AI and machine learning to stochastic modeling—to tackle complex data challenges in dynamical systems, ranging from one-dimensional chaotic maps to high-dimensional geophysical flows.
+        I am an applied mathematician who leverages a broad spectrum of techniques—from generative AI and machine learning to stochastic modeling, multiscale asymptotic and path integral techniques—to tackle complex data challenges in dynamical systems and fluid dynamics, ranging from one-dimensional chaotic maps to high-dimensional geophysical flows.
     </div>
   </section>
 
@@ -149,6 +149,16 @@
   <div class="container">
     <h2>Publications</h2>
     <ul class="publication-list">
+      <li>
+        L.T. Giorgini, 
+        <em>Data-Driven Decomposition of Conservative and Non-Conservative Dynamics in Multiscale Systems</em>, 
+        <a href="https://arxiv.org/abs/2505.01895" target="_blank">arXiv (2025)</a>.
+      </li>
+      <li>
+        L.T. Giorgini, F. Falasca, and A. Souza, 
+        <em>Predicting forced responses of probability distributions via the fluctuation-dissipation theorem and generative modeling</em>, 
+        <a href="https://arxiv.org/abs/2504.13333" target="_blank">arXiv (2025)</a>.
+      </li>
       <li>
         L.T. Giorgini, T. Bischoff, A. Souza, 
         <em>KGMM: A K-means Clustering Approach to Gaussian Mixture Modeling for Score Function Estimation</em>, 
@@ -238,13 +248,17 @@
   </div>
 </section>
   
-  <!-- Code -->
+  <!-- Codes -->
 <section id="code">
   <div class="container">
-    <h2>Code</h2>
+    <h2>Codes</h2>
     <h3><a href="https://github.com/ludogiorgi/ClustGen" target="_blank">ClustGen.jl</a></h3>
     <p>
-      This code implements a hybrid methodology for efficient score function estimation and response analysis in nonlinear stochastic systems. It combines a clustering-based Gaussian Mixture Model approach with neural network interpolation to estimate the score function from large datasets, and leverages the Generalized Fluctuation-Dissipation Theorem (GFDT) to construct higher-order response functions. The code is demonstrated on reduced-order models—including triad systems and slow-fast models relevant to climate dynamics—validating its ability to accurately capture non-Gaussian effects and predict system responses to small perturbations.
+      This repository implements a hybrid methodology for efficient score function estimation and response analysis in nonlinear stochastic systems. It combines a clustering-based Gaussian Mixture Model approach with neural network interpolation to estimate the score function from large datasets, and leverages the Generalized Fluctuation-Dissipation Theorem (GFDT) to construct higher-order response functions. The repository contains examples for reduced-order models—including triad systems and slow-fast models relevant to climate dynamics—demonstrating the methodology's effectiveness in accurately capturing non-Gaussian effects and predicting system responses to small perturbations.
+    </p>
+    <h3><a href="https://github.com/ludogiorgi/TimeSeriesTransformers" target="_blank">TimeSeriesTransformers.jl</a></h3>
+    <p>
+      This repository implements transformer neural networks for predicting time series data using a cluster-based approach. The model discretizes continuous time series into clusters and learns to predict future cluster transitions, enabling both short-term and long-term forecasting.
     </p>
   </div>
 </section>
