@@ -1,0 +1,28 @@
+name: Update Google Scholar publications
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Update publications
+        run: python update_publications.py
+      - name: Commit changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name 'github-actions'
+            git config user.email 'github-actions@github.com'
+            git add publications.html
+            git commit -m 'Automated update of publications'
+            git push
+          fi
