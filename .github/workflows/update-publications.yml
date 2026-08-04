@@ -1,8 +1,8 @@
-name: Update Google Scholar publications
+name: Refresh Google Scholar publication snapshot
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  # The homepage contains a curated selected-publications list. This manual
+  # workflow is retained only for refreshing the separate Scholar snapshot.
   workflow_dispatch:
 
 jobs:
