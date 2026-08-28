@@ -51,7 +51,7 @@ Scientific observations and high-fidelity simulations are generating unprecedent
 
 ### Research Areas
 
-#### Response theory and statistical parameter calibration
+#### Linear Response theory and statistical parameter calibration
 
 My collaborators and I have developed a practical response-theoretic framework for predicting how nonlinear, high-dimensional systems respond to weak perturbations from observations of their unperturbed dynamics. The generalized fluctuation–dissipation theorem (GFDT) expresses this response through time-correlation functions, but its implementation requires the stationary score. Estimating the score accurately in high dimensions has been a principal computational obstacle to applying the GFDT beyond idealized settings. We have combined modern score-matching methods with the GFDT and validated the resulting response estimates on nonlinear stochastic PDEs. More recently, we extended this framework to statistical parameter calibration by interpreting infinitesimal changes in drift and diffusion parameters as dynamical perturbations. The resulting formulas express the sensitivities of stationary observables to all model parameters as time-correlation integrals evaluated along unperturbed trajectories; these sensitivities can then guide parameter updates that bring model statistics toward prescribed targets using only a few model integrations. For lower-dimensional systems, we also developed KGMM, a clustering-based method for accurate and computationally efficient score estimation. Building on these advances, we are using GFDT response sensitivities to identify low-dimensional, target-dependent parameter subspaces for calibrating high-dimensional models.
 
