@@ -31,7 +31,7 @@ Massachusetts Institute of Technology
 
 - [CV](cv.pdf)
 - [E-mail](mailto:ludogio@mit.edu)
-- [MIT Profile](https://math.mit.edu/directory/profile.html?pid=2704)
+- [MIT profile](https://math.mit.edu/directory/profile.html?pid=2704)
 - [Google Scholar](https://scholar.google.com/citations?user=DA5vUj0AAAAJ)
 - [GitHub](https://github.com/ludogiorgi)
 - [ORCID](https://orcid.org/0000-0003-1641-9087)
@@ -49,9 +49,9 @@ I am an applied mathematician working at the intersection of applied probability
 
 Scientific observations and high-fidelity simulations are generating unprecedented volumes of data across the physical sciences. I study how these data can be transformed into reduced models that retain the statistical and dynamical information needed for prediction and physical understanding. I combine stochastic analysis, linear response theory, and scientific machine learning to infer effective dynamics for the resolved variables in these models.
 
-### Research Areas
+### Research areas
 
-#### Linear Response theory and statistical parameter calibration
+#### Linear response theory and statistical parameter calibration
 
 My collaborators and I have developed a practical response-theoretic framework for predicting how nonlinear, high-dimensional systems respond to weak perturbations from observations of their unperturbed dynamics. The generalized fluctuation–dissipation theorem (GFDT) expresses this response through time-correlation functions, but its implementation requires the stationary score. Estimating the score accurately in high dimensions has been a principal computational obstacle to applying the GFDT beyond idealized settings. We have combined modern score-matching methods with the GFDT and validated the resulting response estimates on nonlinear stochastic PDEs. More recently, we extended this framework to statistical parameter calibration by interpreting infinitesimal changes in drift and diffusion parameters as dynamical perturbations. The resulting formulas express the sensitivities of stationary observables to all model parameters as time-correlation integrals evaluated along unperturbed trajectories; these sensitivities can then guide parameter updates that bring model statistics toward prescribed targets using only a few model integrations. For lower-dimensional systems, we also developed KGMM, a clustering-based method for accurate and computationally efficient score estimation. Building on these advances, we are using GFDT response sensitivities to identify low-dimensional, target-dependent parameter subspaces for calibrating high-dimensional models.
 
@@ -72,7 +72,7 @@ Many systems in the physical sciences and engineering couple nonlinear processes
 3. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “Statistical Parameter Calibration via the Generalized Fluctuation–Dissipation Theorem and Generative Modeling,” [arXiv:2509.19660 (2025)](https://arxiv.org/abs/2509.19660).
 4. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “Reduced-Order Modeling of Cyclo-Stationary Time Series Using Score-Based Generative Methods,” [arXiv:2508.19448 (2025)](https://arxiv.org/abs/2508.19448).
 
-### Peer-Reviewed Journal Articles
+### Peer-reviewed journal articles
 
 1. **L. T. Giorgini**, “Score-Based Modeling of Effective Langevin Dynamics,” [*Physical Review E* **114**, L012102 (2026)](https://doi.org/10.1103/6qpv-lqmt).
 2. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “KGMM: A K-means Clustering Approach to Gaussian Mixture Modeling for Score Function Estimation,” [*Physica D: Nonlinear Phenomena* **495**, 135274 (2026)](https://doi.org/10.1016/j.physd.2026.135274).
@@ -94,7 +94,7 @@ Many systems in the physical sciences and engineering couple nonlinear processes
 18. **L. T. Giorgini**, U. D. Jentschura, E. M. Malatesta, G. Parisi, T. Rizzo, and J. Zinn-Justin, “Two-Loop Corrections to the Large-Order Behavior of Correlation Functions in the One-Dimensional N-Vector Model,” [*Physical Review D* **101**, 125001 (2020)](https://doi.org/10.1103/PhysRevD.101.125001).
 19. **L. T. Giorgini**, S. H. Lim, W. Moon, and J. S. Wettlaufer, “Precursors to Rare Events in Stochastic Resonance,” [*EPL* **129**, 40003 (2020)](https://doi.org/10.1209/0295-5075/129/40003). Editor’s Choice.
 
-### Conference and Workshop Publications
+### Conference and workshop publications
 
 1. **L. T. Giorgini**, S. H. Lim, W. Moon, N. Chen, and J. S. Wettlaufer, “Modeling the El Niño Southern Oscillation with Neural Differential Equations,” [Time Series Workshop at ICML 2021 (2021)](https://roseyu.com/time-series-workshop/submissions/2021/TSW-ICML2021_paper_19.pdf).
 
@@ -114,13 +114,13 @@ Many systems in the physical sciences and engineering couple nonlinear processes
 
 **Instructor · Fall 2026**
 
-18.305 is a graduate course covering asymptotic, multiscale, and singular-perturbation methods for extracting the dominant behavior of mathematical models across separated scales. I am the primary lecturer for the Fall 2026 offering.
+18.305 is a graduate course covering asymptotic, multiscale, and singular-perturbation methods for extracting the dominant behavior of mathematical models across separated scales. I am the primary lecturer for the fall 2026 offering.
 
 ### MIT 18.354J: Nonlinear Dynamics II — Continuum Systems
 
 **Instructor · Spring 2026**
 
-18.354J is a graduate course covering dimensional analysis, variational methods, stability, singular perturbations, waves, and pattern formation. I was the primary lecturer for the Spring 2026 offering.
+18.354J is a graduate course covering dimensional analysis, variational methods, stability, singular perturbations, waves, and pattern formation. I was the primary lecturer for the spring 2026 offering.
 
 ## Contact
 
