@@ -3,459 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ludovico Theo Giorgini is an applied mathematician at MIT working on data-driven reduced-order modeling, stochastic dynamics, response theory, and scientific machine learning.">
-  <meta name="theme-color" content="#173b67">
+  <meta name="description" content="I am an applied mathematician working at the intersection of applied probability, statistical physics, and scientific machine learning.">
+  <meta name="theme-color" content="#161616">
+  <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://ludogiorgi.github.io/">
-  <link rel="icon" href="headshot.jpg" type="image/jpeg">
+  <link rel="icon" href="headshot-optimized.jpg" type="image/jpeg">
+  <link rel="preload" as="image" href="assets/fluid-vorticity-hero-4k.webp" type="image/webp" media="(min-width: 701px)">
+  <link rel="preload" as="image" href="assets/fluid-vorticity-hero-mobile.webp" type="image/webp" media="(max-width: 700px)">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ludovico Theo Giorgini | Applied Mathematics">
-  <meta property="og:description" content="Research in data-driven reduced-order modeling, stochastic dynamics, response theory, and scientific machine learning.">
+  <meta property="og:title" content="Ludovico Theo Giorgini | Applied Mathematics and Scientific Machine Learning">
+  <meta property="og:description" content="Scientific observations and high-fidelity simulations are generating unprecedented volumes of data across the physical sciences.">
   <meta property="og:url" content="https://ludogiorgi.github.io/">
-  <meta property="og:image" content="https://ludogiorgi.github.io/headshot.jpg">
+  <meta property="og:image" content="https://ludogiorgi.github.io/assets/social-preview.png">
+  <meta property="og:image:width" content="1733">
+  <meta property="og:image:height" content="908">
+  <meta property="og:image:alt" content="Ludovico Theo Giorgini | Applied Mathematics and Scientific Machine Learning">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ludovico Theo Giorgini | Applied Mathematics and Scientific Machine Learning">
+  <meta name="twitter:description" content="Scientific observations and high-fidelity simulations are generating unprecedented volumes of data across the physical sciences.">
+  <meta name="twitter:image" content="https://ludogiorgi.github.io/assets/social-preview.png">
+  <meta name="twitter:image:alt" content="Ludovico Theo Giorgini | Applied Mathematics and Scientific Machine Learning">
 
-  <title>Ludovico Theo Giorgini | Applied Mathematics</title>
-  <style>
-    :root {
-      --ink: #202833;
-      --muted: #526171;
-      --accent: #155da6;
-      --accent-dark: #0e467e;
-      --nav: #17212c;
-      --surface: #f5f7fa;
-      --border: #dbe2e9;
-      --white: #fff;
-      --shadow: 0 8px 24px rgba(20, 37, 55, 0.08);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--white);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      line-height: 1.65;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--accent-dark);
-      text-decoration: underline;
-    }
-
-    a:focus-visible {
-      outline: 3px solid rgba(21, 93, 166, 0.35);
-      outline-offset: 3px;
-      border-radius: 3px;
-    }
-
-    .container {
-      width: min(92%, 1080px);
-      margin: 0 auto;
-    }
-
-    header {
-      background: linear-gradient(135deg, #f5f7fa 0%, #edf3f8 100%);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 34px;
-      min-height: 250px;
-      padding: 36px 0;
-      text-align: left;
-    }
-
-    .hero img {
-      width: 158px;
-      height: 158px;
-      flex: 0 0 auto;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center 30%;
-      box-shadow: 0 7px 20px rgba(20, 37, 55, 0.2);
-    }
-
-    .hero h1 {
-      margin: 0 0 6px;
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      line-height: 1.15;
-      letter-spacing: -0.025em;
-    }
-
-    .hero p {
-      margin: 4px 0;
-    }
-
-    .position {
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 4px 28px;
-      padding: 11px 20px;
-      background: var(--nav);
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
-    }
-
-    nav a {
-      padding: 5px 0;
-      color: var(--white);
-      font-size: 0.84rem;
-      font-weight: 700;
-      letter-spacing: 0.055em;
-      text-transform: uppercase;
-    }
-
-    nav a:hover {
-      color: #cfe6ff;
-      text-decoration: none;
-    }
-
-    section {
-      padding: 58px 0;
-      scroll-margin-top: 56px;
-    }
-
-    section:nth-of-type(even) {
-      background: var(--surface);
-    }
-
-    h2 {
-      display: inline-block;
-      margin: 0 0 24px;
-      padding-bottom: 5px;
-      border-bottom: 3px solid var(--accent);
-      font-size: 1.65rem;
-      line-height: 1.25;
-    }
-
-    h3,
-    h4 {
-      margin: 0 0 8px;
-      color: var(--ink);
-      font-size: 1.08rem;
-      line-height: 1.35;
-    }
-
-    .lead {
-      max-width: 940px;
-      margin: 0;
-      font-size: 1.06rem;
-    }
-
-    .research-grid,
-    .software-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .research-card,
-    .software-card {
-      padding: 22px 24px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .research-card p,
-    .software-card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .research-card:first-child {
-      grid-column: 1 / -1;
-    }
-
-    .publication-list {
-      margin: 0;
-      padding-left: 1.4rem;
-    }
-
-    .publication-list li {
-      margin-bottom: 15px;
-      padding-left: 5px;
-    }
-
-    .section-note {
-      margin: -10px 0 24px;
-      color: var(--muted);
-    }
-
-    .software-group + .software-group {
-      margin-top: 36px;
-    }
-
-    .software-group > h3 {
-      margin-bottom: 15px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .software-card h4 a {
-      color: var(--accent);
-    }
-
-    .software-links {
-      display: flex;
-      gap: 16px;
-      margin-top: 13px;
-      font-size: 0.9rem;
-      font-weight: 700;
-    }
-
-    .contact-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .contact-list li {
-      margin-bottom: 8px;
-    }
-
-    footer {
-      padding: 18px 20px;
-      background: var(--nav);
-      color: #e7eef5;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    @media (max-width: 720px) {
-      body {
-        font-size: 16px;
-      }
-
-      .hero {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-      }
-
-      .hero img {
-        width: 138px;
-        height: 138px;
-      }
-
-      nav {
-        gap: 2px 17px;
-      }
-
-      section {
-        padding: 44px 0;
-      }
-
-      .research-grid,
-      .software-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .research-card:first-child {
-        grid-column: auto;
-      }
-    }
-  </style>
+  <title>Ludovico Theo Giorgini</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <header>
+  <header id="about">
     <div class="container hero">
-      <img src="headshot.jpg" alt="Portrait of Ludovico Theo Giorgini">
+      <img src="headshot-optimized.jpg" alt="Portrait of Ludovico Theo Giorgini." width="1200" height="1188">
       <div>
+        <p class="position">C.L.E. Moore Instructor of Mathematics<br>Massachusetts Institute of Technology</p>
         <h1>Ludovico Theo Giorgini</h1>
-        <p class="position">C.L.E. Moore Instructor of Mathematics | Massachusetts Institute of Technology</p>
-        <p>Email: <a href="mailto:ludogio@mit.edu">ludogio@mit.edu</a></p>
+        <p class="hero-intro">I am an applied mathematician working at the intersection of applied probability, statistical physics, and scientific machine learning. I develop mathematical and computational methods for extracting effective low-dimensional descriptions from complex, high-dimensional systems. I am particularly interested in multiscale problems in fluid dynamics, geophysics, and nonequilibrium systems.</p>
+        <div class="hero-links">
+          <a class="hero-link" href="cv.pdf">CV</a>
+          <a class="hero-link" href="mailto:ludogio@mit.edu">E-mail</a>
+          <a class="hero-link" href="https://math.mit.edu/directory/profile.html?pid=2704">MIT Profile</a>
+          <a class="hero-link" href="https://scholar.google.com/citations?user=DA5vUj0AAAAJ">Google Scholar</a>
+          <a class="hero-link" href="https://github.com/ludogiorgi">GitHub</a>
+          <a class="hero-link" href="https://orcid.org/0000-0003-1641-9087">ORCID</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <nav aria-label="Primary navigation">
-    <a href="#about">About</a>
+  <nav aria-label="Pages">
+    <a href="#about">About me</a>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#software">Software</a>
+    <a href="#teaching">Teaching</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <main>
-    <section id="about">
+  <main id="main-content">
+    <section id="research" aria-labelledby="research-title">
       <div class="container">
-        <h2>About Me</h2>
-        <p class="lead">
-          I am an applied mathematician developing data-driven reduced-order models for complex multiscale systems. My research combines score-based generative modeling, stochastic dynamics, response theory, and neural differential equations to construct computationally efficient models that preserve observed statistics, temporal correlations, and responses to perturbations, with applications in fluid dynamics, geophysics, and statistical physics.
-        </p>
-      </div>
-    </section>
+        <h2 id="research-title">Research</h2>
+        <p class="section-intro">Scientific observations and high-fidelity simulations are generating unprecedented volumes of data across the physical sciences. I study how these data can be transformed into reduced models that retain the statistical and dynamical information needed for prediction and physical understanding. I combine stochastic analysis, linear response theory, and scientific machine learning to infer effective dynamics for the resolved variables in these models.</p>
 
-    <section id="research">
-      <div class="container">
-        <h2>Research</h2>
-        <div class="research-grid">
-          <article class="research-card">
-            <h3>Score-Based Stochastic Reduced-Order Models</h3>
-            <p>Markovian closures that reproduce prescribed stationary distributions and dynamical correlations directly from data, without repeated solver-in-the-loop calibration.</p>
-          </article>
-          <article class="research-card">
-            <h3>Response Theory and Parameter Calibration</h3>
-            <p>Generalized fluctuation-dissipation methods for predicting forced responses and estimating sensitivities of statistical observables from unperturbed trajectories.</p>
-          </article>
-          <article class="research-card">
-            <h3>Multiscale and Chaotic Dynamics</h3>
-            <p>Hybrid Langevin and neural-ODE models that combine accurate long-time statistics with short-time prediction of rare transitions in multiscale systems.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications">
-      <div class="container">
-        <h2>Selected Publications</h2>
-        <p class="section-note">For the complete publication record, see <a href="https://scholar.google.com/citations?user=DA5vUj0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
-        <ol class="publication-list">
-          <li>
-            L. T. Giorgini,
-            <em>Score-Based Modeling of Effective Langevin Dynamics</em>,
-            <a href="https://journals.aps.org/pre/abstract/10.1103/6qpv-lqmt" target="_blank" rel="noopener noreferrer">Physical Review E 114, L012102 (2026)</a>.
-          </li>
-          <li>
-            L. T. Giorgini,
-            <em>Conditional Score-Based Modeling of Effective Langevin Dynamics</em>,
-            <a href="https://arxiv.org/abs/2604.23952" target="_blank" rel="noopener noreferrer">arXiv:2604.23952 (2026)</a>.
-          </li>
-          <li>
-            G. Del Felice and L. T. Giorgini,
-            <em>Integrating Score-Based Generative Modeling and Neural ODEs for Accurate Representation of Multiscale Chaotic Dynamics</em>,
-            <a href="https://arxiv.org/abs/2511.03862" target="_blank" rel="noopener noreferrer">Chaos 36, 063143 (2026)</a>.
-          </li>
-          <li>
-            L. T. Giorgini, T. Bischoff, and A. N. Souza,
-            <em>Statistical Parameter Calibration with the Generalized Fluctuation-Dissipation Theorem and Generative Modeling</em>,
-            <a href="https://arxiv.org/abs/2509.19660" target="_blank" rel="noopener noreferrer">arXiv:2509.19660 (2025)</a>.
-          </li>
-          <li>
-            L. T. Giorgini, T. Bischoff, and A. N. Souza,
-            <em>Reduced-Order Modeling of Cyclo-Stationary Time Series Using Score-Based Generative Methods</em>,
-            <a href="https://arxiv.org/abs/2508.19448" target="_blank" rel="noopener noreferrer">arXiv:2508.19448 (2025)</a>.
-          </li>
-          <li>
-            L. T. Giorgini, F. Falasca, and A. N. Souza,
-            <em>Predicting Forced Responses of Probability Distributions via the Fluctuation-Dissipation Theorem and Generative Modeling</em>,
-            <a href="https://www.pnas.org/doi/10.1073/pnas.2509578122" target="_blank" rel="noopener noreferrer">Proceedings of the National Academy of Sciences 122, e2509578122 (2025)</a>.
-          </li>
-          <li>
-            L. T. Giorgini, T. Bischoff, and A. N. Souza,
-            <em>KGMM: A K-Means Clustering Approach to Gaussian Mixture Modeling for Score Function Estimation</em>,
-            <a href="https://arxiv.org/abs/2503.18054" target="_blank" rel="noopener noreferrer">arXiv:2503.18054 (2025)</a>.
-          </li>
-          <li>
-            L. T. Giorgini, K. Deck, T. Bischoff, and A. N. Souza,
-            <em>Response Theory via Generative Score Modeling</em>,
-            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.267302" target="_blank" rel="noopener noreferrer">Physical Review Letters 133, 267302 (2024)</a>.
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="software">
-      <div class="container">
-        <h2>Open-Source Software</h2>
-
-        <div class="software-group">
-          <h3>Featured Research Software</h3>
-          <div class="software-grid">
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/StateDependentMobility.jl" target="_blank" rel="noopener noreferrer">StateDependentMobility.jl</a></h4>
-              <p>Tools for learning and validating state-dependent mobility tensors in effective Langevin models from finite-lag trajectory data and conditional scores.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/StateDependentMobility.jl" target="_blank" rel="noopener noreferrer">Code</a>
-                <a href="https://arxiv.org/abs/2604.23952" target="_blank" rel="noopener noreferrer">Paper</a>
+        <div class="content-group research-group">
+          <h3 class="subsection-title">Research Areas</h3>
+          <div class="research-list">
+            <article class="research-direction">
+              <div class="direction-label">
+                <h4>Response theory and statistical parameter calibration</h4>
+              </div>
+              <div class="direction-body">
+                <p>My collaborators and I have developed a practical response-theoretic framework for predicting how nonlinear, high-dimensional systems respond to weak perturbations from observations of their unperturbed dynamics. The generalized fluctuation–dissipation theorem (GFDT) expresses this response through time-correlation functions, but its implementation requires the stationary score. Estimating the score accurately in high dimensions has been a principal computational obstacle to applying the GFDT beyond idealized settings. We have combined modern score-matching methods with the GFDT and validated the resulting response estimates on nonlinear stochastic PDEs. More recently, we extended this framework to statistical parameter calibration by interpreting infinitesimal changes in drift and diffusion parameters as dynamical perturbations. The resulting formulas express the sensitivities of stationary observables to all model parameters as time-correlation integrals evaluated along unperturbed trajectories; these sensitivities can then guide parameter updates that bring model statistics toward prescribed targets using only a few model integrations. For lower-dimensional systems, we also developed KGMM, a clustering-based method for accurate and computationally efficient score estimation. Building on these advances, we are using GFDT response sensitivities to identify low-dimensional, target-dependent parameter subspaces for calibrating high-dimensional models.</p>
+                <p class="representative-work"><strong>Representative work:</strong> <a href="https://doi.org/10.1103/PhysRevLett.133.267302">Giorgini et al. (2024)</a>, <a href="https://doi.org/10.1073/pnas.2509578122">Giorgini, Falasca, and Souza (2025)</a>, <a href="https://arxiv.org/abs/2509.19660">Giorgini, Bischoff, and Souza (2025)</a>, and <a href="https://doi.org/10.1016/j.physd.2026.135274">Giorgini, Bischoff, and Souza (2026)</a>.</p>
               </div>
             </article>
 
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/ScoreUNet1D.jl" target="_blank" rel="noopener noreferrer">ScoreUNet1D.jl</a></h4>
-              <p>One-dimensional score U-Nets trained by denoising score matching, with Langevin validation for coarse-grained Kuramoto–Sivashinsky dynamics.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/ScoreUNet1D.jl" target="_blank" rel="noopener noreferrer">Code</a>
-                <a href="https://journals.aps.org/pre/abstract/10.1103/6qpv-lqmt" target="_blank" rel="noopener noreferrer">Paper</a>
+            <article class="research-direction">
+              <div class="direction-label">
+                <h4>Score-based stochastic closures</h4>
               </div>
-            </article>
-
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/ScoreEstimation.jl" target="_blank" rel="noopener noreferrer">ScoreEstimation.jl</a></h4>
-              <p>KGMM and neural interpolation for estimating score functions, divergences, and score Jacobians from high-dimensional samples.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/ScoreEstimation.jl" target="_blank" rel="noopener noreferrer">Code</a>
-                <a href="https://arxiv.org/abs/2503.18054" target="_blank" rel="noopener noreferrer">Paper</a>
-              </div>
-            </article>
-
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/ParameterCalibration.jl" target="_blank" rel="noopener noreferrer">ParameterCalibration.jl</a></h4>
-              <p>GFDT conjugate observables, trajectory-based sensitivity matrices, and Newton-style updates for drift and diffusion parameters.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/ParameterCalibration.jl" target="_blank" rel="noopener noreferrer">Code</a>
-                <a href="https://arxiv.org/abs/2509.19660" target="_blank" rel="noopener noreferrer">Paper</a>
-              </div>
-            </article>
-
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/FastSDE.jl" target="_blank" rel="noopener noreferrer">FastSDE.jl</a></h4>
-              <p>A speed-first Julia library for stochastic and deterministic integration, including threaded ensembles and batched neural-network drift evaluation.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/FastSDE.jl" target="_blank" rel="noopener noreferrer">Code</a>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="software-group">
-          <h3>Time-Series Forecasting</h3>
-          <div class="software-grid">
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/DiscreteTransformers.jl" target="_blank" rel="noopener noreferrer">DiscreteTransformers.jl</a></h4>
-              <p>Transformer forecasting on clustered state sequences, with ensemble generation and statistical validation of long synthetic trajectories.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/DiscreteTransformers.jl" target="_blank" rel="noopener noreferrer">Code</a>
-              </div>
-            </article>
-
-            <article class="software-card">
-              <h4><a href="https://github.com/ludogiorgi/ContinuousTransformers.jl" target="_blank" rel="noopener noreferrer">ContinuousTransformers.jl</a></h4>
-              <p>Transformer forecasting directly on continuous-valued delay embeddings for next-step prediction, ensembles, and forecast-horizon analysis.</p>
-              <div class="software-links">
-                <a href="https://github.com/ludogiorgi/ContinuousTransformers.jl" target="_blank" rel="noopener noreferrer">Code</a>
+              <div class="direction-body">
+                <p>Many systems in the physical sciences and engineering couple nonlinear processes across widely separated spatial and temporal scales. The quantities of scientific interest, however, often depend only on a much smaller set of coarse observables and their statistics rather than on the complete high-dimensional state. The goal is therefore to use coarse data from observations, experiments, or high-fidelity simulations to construct efficient stochastic models that evolve only these resolved variables while reproducing the statistical and dynamical observables of interest. The difficulty is that the dynamics of the coarse variables are generally not closed: unresolved degrees of freedom influence their evolution through effective dissipation, fluctuations, feedback, and memory. I construct Markovian <em>a priori</em> closures directly from the statistical and finite-time dynamical observables they must reproduce. Instead of specifying a local evolution law and then testing its long-time behavior, the construction begins with these target observables and asks which stochastic models reproduce them by construction. The stationary score—the gradient of the logarithm of the steady-state probability density—characterizes a broad class of stochastic models that preserve the observed distribution by construction; combining it with linear response theory through the generalized fluctuation–dissipation theorem provides complementary dynamical constraints that restrict this class to models reproducing selected finite-time observables. The admissible family is therefore determined directly from observable constraints, without repeated simulations of candidate closures.</p>
+                <p class="representative-work"><strong>Representative work:</strong> <a href="https://doi.org/10.1103/6qpv-lqmt">Giorgini (2026)</a>, <a href="https://arxiv.org/abs/2508.19448">Giorgini, Bischoff, and Souza (2025)</a>, <a href="https://arxiv.org/abs/2604.23952">Giorgini (2026)</a>, and <a href="https://doi.org/10.1063/5.0326565">Del Felice and Giorgini (2026)</a>.</p>
               </div>
             </article>
           </div>
@@ -463,20 +91,150 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="publications" aria-labelledby="publications-title">
       <div class="container">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:ludogio@mit.edu">ludogio@mit.edu</a></li>
-          <li><strong>Office:</strong> Room 2-165</li>
-          <li><strong>Address:</strong> <a href="https://maps.google.com/?q=MIT+Mathematics+Department,+77+Massachusetts+Avenue,+Cambridge,+MA+02139" target="_blank" rel="noopener noreferrer">Department of Mathematics, MIT, 77 Massachusetts Avenue, Cambridge, MA 02139</a></li>
-        </ul>
+        <h2 id="publications-title">Publications</h2>
+
+        <div class="publication-group">
+          <h3>Preprints</h3>
+          <ol class="publication-list">
+            <li><strong>L. T. Giorgini</strong>, <span class="publication-title">“Conditional Score-Based Modeling of Effective Langevin Dynamics,”</span> <a href="https://arxiv.org/abs/2604.23952">arXiv:2604.23952 (2026)</a>.</li>
+            <li>P. Patra, <strong>L. T. Giorgini</strong>, and J. S. Wettlaufer, <span class="publication-title">“Stochastic Coupling of Climate Variables and Ice Volume over the Late Pleistocene Glacial Cycles,”</span> <a href="https://arxiv.org/abs/2603.26937">arXiv:2603.26937 (2026)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, T. Bischoff, and A. N. Souza, <span class="publication-title">“Statistical Parameter Calibration via the Generalized Fluctuation–Dissipation Theorem and Generative Modeling,”</span> <a href="https://arxiv.org/abs/2509.19660">arXiv:2509.19660 (2025)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, T. Bischoff, and A. N. Souza, <span class="publication-title">“Reduced-Order Modeling of Cyclo-Stationary Time Series Using Score-Based Generative Methods,”</span> <a href="https://arxiv.org/abs/2508.19448">arXiv:2508.19448 (2025)</a>.</li>
+          </ol>
+        </div>
+
+        <div class="publication-group">
+          <h3>Peer-Reviewed Journal Articles</h3>
+          <ol class="publication-list">
+            <li><strong>L. T. Giorgini</strong>, <span class="publication-title">“Score-Based Modeling of Effective Langevin Dynamics,”</span> <a href="https://doi.org/10.1103/6qpv-lqmt"><em>Physical Review E</em> <strong>114</strong>, L012102 (2026)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, T. Bischoff, and A. N. Souza, <span class="publication-title">“KGMM: A K-means Clustering Approach to Gaussian Mixture Modeling for Score Function Estimation,”</span> <a href="https://doi.org/10.1016/j.physd.2026.135274"><em>Physica D: Nonlinear Phenomena</em> <strong>495</strong>, 135274 (2026)</a>.</li>
+            <li>G. Del Felice and <strong>L. T. Giorgini</strong>, <span class="publication-title">“Integrating Score-Based Generative Modeling and Neural ODEs for Accurate Representation of Multiscale Chaotic Dynamics,”</span> <a href="https://doi.org/10.1063/5.0326565"><em>Chaos</em> <strong>36</strong>, 063143 (2026)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, F. Falasca, and A. N. Souza, <span class="publication-title">“Predicting Forced Responses of Probability Distributions via the Fluctuation–Dissipation Theorem and Generative Modeling,”</span> <a href="https://doi.org/10.1073/pnas.2509578122"><em>Proceedings of the National Academy of Sciences</em> <strong>122</strong>, e2509578122 (2025)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, A. N. Souza, D. Lippolis, P. Cvitanović, and P. J. Schmid, <span class="publication-title">“Learning Dissipation and Instability Fields from Chaotic Dynamics,”</span> <a href="https://doi.org/10.1016/j.physd.2025.134865"><em>Physica D: Nonlinear Phenomena</em> <strong>481</strong>, 134865 (2025)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, K. Deck, T. Bischoff, and A. N. Souza, <span class="publication-title">“Response Theory via Generative Score Modeling,”</span> <a href="https://doi.org/10.1103/PhysRevLett.133.267302"><em>Physical Review Letters</em> <strong>133</strong>, 267302 (2024)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, A. N. Souza, and P. J. Schmid, <span class="publication-title">“Reduced Markovian Models of Dynamical Systems,”</span> <a href="https://doi.org/10.1016/j.physd.2024.134393"><em>Physica D: Nonlinear Phenomena</em> <strong>470</strong>, 134393 (2024)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, W. Moon, and J. S. Wettlaufer, <span class="publication-title">“Analytical Survival Analysis of the Non-autonomous Ornstein–Uhlenbeck Process,”</span> <a href="https://doi.org/10.1007/s10955-024-03355-z"><em>Journal of Statistical Physics</em> <strong>191</strong>, 138 (2024)</a>.</li>
+            <li>U. D. Jentschura and <strong>L. T. Giorgini</strong>, <span class="publication-title">“Enhanced and Generalized One-Step Neville Algorithm: Fractional Powers and Access to the Convergence Rate,”</span> <a href="https://doi.org/10.1016/j.cpc.2024.109280"><em>Computer Physics Communications</em> <strong>303</strong>, 109280 (2024)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, U. D. Jentschura, E. M. Malatesta, T. Rizzo, and J. Zinn-Justin, <span class="publication-title">“Instantons in φ⁴ Theories: Transseries, Virial Theorems, and Numerical Aspects,”</span> <a href="https://doi.org/10.1103/PhysRevD.110.036003"><em>Physical Review D</em> <strong>110</strong>, 036003 (2024)</a>. Editors’ Suggestion.</li>
+            <li>N. D. B. Keyes, <strong>L. T. Giorgini</strong>, and J. S. Wettlaufer, <span class="publication-title">“Stochastic Paleoclimatology: Modeling the EPICA Ice Core Climate Records,”</span> <a href="https://doi.org/10.1063/5.0128814"><em>Chaos</em> <strong>33</strong>, 093132 (2023)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, R. Eichhorn, M. Das, W. Moon, and J. S. Wettlaufer, <span class="publication-title">“Thermodynamic Cost of Erasing Information in Finite Time,”</span> <a href="https://doi.org/10.1103/PhysRevResearch.5.023084"><em>Physical Review Research</em> <strong>5</strong>, 023084 (2023)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, W. Moon, N. Chen, and J. S. Wettlaufer, <span class="publication-title">“Non-Gaussian Stochastic Dynamical Model for the El Niño Southern Oscillation,”</span> <a href="https://doi.org/10.1103/PhysRevResearch.4.L022065"><em>Physical Review Research</em> <strong>4</strong>, L022065 (2022)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, U. D. Jentschura, E. M. Malatesta, G. Parisi, T. Rizzo, and J. Zinn-Justin, <span class="publication-title">“Correlation Functions of the Anharmonic Oscillator: Numerical Verification of Two-Loop Corrections to the Large-Order Behavior,”</span> <a href="https://doi.org/10.1103/PhysRevD.105.105012"><em>Physical Review D</em> <strong>105</strong>, 105012 (2022)</a>.</li>
+            <li>W. Moon, <strong>L. T. Giorgini</strong>, and J. S. Wettlaufer, <span class="publication-title">“Analytical Solution of Stochastic Resonance in the Nonadiabatic Regime,”</span> <a href="https://doi.org/10.1103/PhysRevE.104.044130"><em>Physical Review E</em> <strong>104</strong>, 044130 (2021)</a>.</li>
+            <li>S. H. Lim, <strong>L. T. Giorgini</strong>, W. Moon, and J. S. Wettlaufer, <span class="publication-title">“Predicting Critical Transitions in Multiscale Dynamical Systems Using Reservoir Computing,”</span> <a href="https://doi.org/10.1063/5.0023764"><em>Chaos</em> <strong>30</strong>, 123126 (2020)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, W. Moon, and J. S. Wettlaufer, <span class="publication-title">“Analytical Survival Analysis of the Ornstein–Uhlenbeck Process,”</span> <a href="https://doi.org/10.1007/s10955-020-02669-y"><em>Journal of Statistical Physics</em> <strong>181</strong>, 2404–2414 (2020)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, U. D. Jentschura, E. M. Malatesta, G. Parisi, T. Rizzo, and J. Zinn-Justin, <span class="publication-title">“Two-Loop Corrections to the Large-Order Behavior of Correlation Functions in the One-Dimensional N-Vector Model,”</span> <a href="https://doi.org/10.1103/PhysRevD.101.125001"><em>Physical Review D</em> <strong>101</strong>, 125001 (2020)</a>.</li>
+            <li><strong>L. T. Giorgini</strong>, S. H. Lim, W. Moon, and J. S. Wettlaufer, <span class="publication-title">“Precursors to Rare Events in Stochastic Resonance,”</span> <a href="https://doi.org/10.1209/0295-5075/129/40003"><em>EPL</em> <strong>129</strong>, 40003 (2020)</a>. Editor’s Choice.</li>
+          </ol>
+        </div>
+
+        <div class="publication-group">
+          <h3>Conference and Workshop Publications</h3>
+          <ol class="publication-list">
+            <li><strong>L. T. Giorgini</strong>, S. H. Lim, W. Moon, N. Chen, and J. S. Wettlaufer, <span class="publication-title">“Modeling the El Niño Southern Oscillation with Neural Differential Equations,”</span> <a href="https://roseyu.com/time-series-workshop/submissions/2021/TSW-ICML2021_paper_19.pdf">Time Series Workshop at ICML 2021 (2021)</a>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="software" aria-labelledby="software-title">
+      <div class="container">
+        <h2 id="software-title">Open-source scientific software</h2>
+        <div class="software-grid">
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/DiscreteTransformers.jl">DiscreteTransformers.jl</a>:</h3>
+            <p>Transformer-based ensemble forecasting and scenario generation for discretized time series.</p>
+            <div class="software-links"><a href="https://github.com/ludogiorgi/DiscreteTransformers.jl">Code</a></div>
+          </article>
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/ContinuousTransformers.jl">ContinuousTransformers.jl</a>:</h3>
+            <p>Continuous-state, delay-embedded transformer models for probabilistic forecasting.</p>
+            <div class="software-links"><a href="https://github.com/ludogiorgi/ContinuousTransformers.jl">Code</a></div>
+          </article>
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/FastSDE">FastSDE.jl</a>:</h3>
+            <p>High-performance Julia simulation of deterministic and stochastic dynamical systems.</p>
+            <div class="software-links"><a href="https://github.com/ludogiorgi/FastSDE">Code</a></div>
+          </article>
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/ScoreEstimation.jl">ScoreEstimation.jl</a>:</h3>
+            <p>KGMM-based score estimation using clustered Gaussian mixtures and neural interpolation.</p>
+            <div class="software-links">
+              <a href="https://github.com/ludogiorgi/ScoreEstimation.jl">Code</a>
+              <a href="https://doi.org/10.1016/j.physd.2026.135274">Paper</a>
+            </div>
+          </article>
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/ParameterCalibration.jl">ParameterCalibration.jl</a>:</h3>
+            <p>GFDT-based sensitivity estimation and statistical parameter calibration from a single baseline simulation.</p>
+            <div class="software-links">
+              <a href="https://github.com/ludogiorgi/ParameterCalibration.jl">Code</a>
+              <a href="https://arxiv.org/abs/2509.19660">Paper</a>
+            </div>
+          </article>
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/ScoreUNet1D.jl">ScoreUNet1D.jl</a>:</h3>
+            <p>Denoising-score-matching U-Net models and Langevin validation for one-dimensional fields.</p>
+            <div class="software-links">
+              <a href="https://github.com/ludogiorgi/ScoreUNet1D.jl">Code</a>
+              <a href="https://doi.org/10.1103/6qpv-lqmt">Paper</a>
+            </div>
+          </article>
+          <article class="software-card">
+            <h3><a href="https://github.com/ludogiorgi/StateDependentMobility.jl">StateDependentMobility.jl</a>:</h3>
+            <p>Learning and validation of state-dependent mobility tensors from finite-lag trajectories and conditional scores.</p>
+            <div class="software-links">
+              <a href="https://github.com/ludogiorgi/StateDependentMobility.jl">Code</a>
+              <a href="https://arxiv.org/abs/2604.23952">Paper</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching" aria-labelledby="teaching-title">
+      <div class="container">
+        <h2 id="teaching-title">Teaching</h2>
+        <div class="teaching-grid">
+          <article class="course-card">
+            <h3>MIT 18.305: Advanced Analytic Methods in Science and Engineering</h3>
+            <p class="course-meta"><strong>Instructor · Fall 2026</strong></p>
+            <p>18.305 is a graduate course covering asymptotic, multiscale, and singular-perturbation methods for extracting the dominant behavior of mathematical models across separated scales. I am the primary lecturer for the Fall 2026 offering.</p>
+          </article>
+          <article class="course-card">
+            <h3>MIT 18.354J: Nonlinear Dynamics II — Continuum Systems</h3>
+            <p class="course-meta"><strong>Instructor · Spring 2026</strong></p>
+            <p>18.354J is a graduate course covering dimensional analysis, variational methods, stability, singular perturbations, waves, and pattern formation. I was the primary lecturer for the Spring 2026 offering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Email:</h3>
+            <p><a href="mailto:ludogio@mit.edu">ludogio@mit.edu</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>Office:</h3>
+            <p>Room 2-157</p>
+          </div>
+          <div class="contact-item">
+            <h3>Address:</h3>
+            <p><a href="https://maps.google.com/?q=MIT+Mathematics+Department,+77+Massachusetts+Avenue,+Cambridge,+MA+02139">Department of Mathematics, MIT, 77 Massachusetts Avenue, Cambridge, MA 02139</a></p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Ludovico Theo Giorgini.</p>
+    <p>© 2026 Ludovico Theo Giorgini</p>
   </footer>
 </body>
 </html>
