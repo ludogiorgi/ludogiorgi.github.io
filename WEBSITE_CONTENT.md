@@ -4,8 +4,8 @@ This file is the publication-ready source of truth for the website’s written c
 
 ## Site-wide metadata
 
-- **Browser title:** Ludovico Theo Giorgini
-- **Open Graph title:** Ludovico Theo Giorgini
+- **Browser title:** Ludovico Theo Giorgini | Scientific ML & Applied Mathematics
+- **Open Graph title:** Ludovico Theo Giorgini | Scientific ML & Applied Mathematics
 - **Headshot alt text:** Portrait of Ludovico Theo Giorgini.
 
 ## Sidebar
