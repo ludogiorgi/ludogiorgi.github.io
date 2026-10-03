@@ -67,10 +67,11 @@ Many systems in the physical sciences and engineering couple nonlinear processes
 
 ### Preprints
 
-1. **L. T. Giorgini**, “Conditional Score-Based Modeling of Effective Langevin Dynamics,” [arXiv:2604.23952 (2026)](https://arxiv.org/abs/2604.23952).
-2. P. Patra, **L. T. Giorgini**, and J. S. Wettlaufer, “Stochastic Coupling of Climate Variables and Ice Volume over the Late Pleistocene Glacial Cycles,” [arXiv:2603.26937 (2026)](https://arxiv.org/abs/2603.26937).
-3. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “Statistical Parameter Calibration via the Generalized Fluctuation–Dissipation Theorem and Generative Modeling,” [arXiv:2509.19660 (2025)](https://arxiv.org/abs/2509.19660).
-4. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “Reduced-Order Modeling of Cyclo-Stationary Time Series Using Score-Based Generative Methods,” [arXiv:2508.19448 (2025)](https://arxiv.org/abs/2508.19448).
+1. **L. T. Giorgini**, “Score-Based Stochastic Reduced-Order Models of Barotropic Quasi-Geostrophic Turbulence,” [arXiv:2609.34028 (2026)](https://arxiv.org/abs/2609.34028).
+2. **L. T. Giorgini**, “Conditional Score-Based Modeling of Effective Langevin Dynamics,” [arXiv:2604.23952 (2026)](https://arxiv.org/abs/2604.23952).
+3. P. Patra, **L. T. Giorgini**, and J. S. Wettlaufer, “Stochastic Coupling of Climate Variables and Ice Volume over the Late Pleistocene Glacial Cycles,” [arXiv:2603.26937 (2026)](https://arxiv.org/abs/2603.26937).
+4. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “Statistical Parameter Calibration via the Generalized Fluctuation–Dissipation Theorem and Generative Modeling,” [arXiv:2509.19660 (2025)](https://arxiv.org/abs/2509.19660).
+5. **L. T. Giorgini**, T. Bischoff, and A. N. Souza, “Reduced-Order Modeling of Cyclo-Stationary Time Series Using Score-Based Generative Methods,” [arXiv:2508.19448 (2025)](https://arxiv.org/abs/2508.19448).
 
 ### Peer-reviewed journal articles
 
