@@ -108,6 +108,7 @@ Many systems in the physical sciences and engineering couple nonlinear processes
 - **[ParameterCalibration.jl](https://github.com/ludogiorgi/ParameterCalibration.jl):** GFDT-based sensitivity estimation and statistical parameter calibration from a single baseline simulation. [Code](https://github.com/ludogiorgi/ParameterCalibration.jl) [Paper](https://arxiv.org/abs/2509.19660)
 - **[ScoreUNet1D.jl](https://github.com/ludogiorgi/ScoreUNet1D.jl):** Denoising-score-matching U-Net models and Langevin validation for one-dimensional fields. [Code](https://github.com/ludogiorgi/ScoreUNet1D.jl) [Paper](https://doi.org/10.1103/6qpv-lqmt)
 - **[StateDependentMobility.jl](https://github.com/ludogiorgi/StateDependentMobility.jl):** Learning and validation of state-dependent mobility tensors from finite-lag trajectories and conditional scores. [Code](https://github.com/ludogiorgi/StateDependentMobility.jl) [Paper](https://arxiv.org/abs/2604.23952)
+- **[QG-ROM](https://github.com/ludogiorgi/qg-rom):** Stationary-score learning and GFDT mobility calibration for stochastic reduced-order models of quasi-geostrophic turbulence. [Code](https://github.com/ludogiorgi/qg-rom) [Paper](https://arxiv.org/abs/2609.34028)
 
 ## Teaching
 
